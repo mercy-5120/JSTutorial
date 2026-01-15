@@ -2,9 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>$Title$</title>
+  <title>Introduction to JavaScript</title>
 </head>
 <body>
-$END$
+<h1>JS 101</h1>
+<script src="variables.js"></script>
+<script>
+  console.log("Hello world!");
+  console.log(55*8);
+
+  for(let i=0;i< 100; i++){
+    if(i%2 == 0){
+      document.write("<p style = 'color:green'>This is line number " + i+ "</p>");//Method allows you to write HTML code inside a js script
+    }
+    else{
+      document.write("<p style = 'color:red'>This is line number " + i + "</p>")
+    }
+  }
+</script>
+
 </body>
 </html>
