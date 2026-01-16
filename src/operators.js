@@ -19,9 +19,10 @@ console.log(3>2);//true and same for other comparison operators
 
 //4. Logical Operators: Used to combine multiple conditions. && || !
 let isAdult = true;
-let hasID = false;
+let hasID = true;
 if (isAdult && hasID){
     console.log("Allowed to enter the  club");
 }
+
 //5. Type Operators: typeof, instanceof
 console.log(typeof age);//number
