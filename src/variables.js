@@ -16,12 +16,12 @@ if(isActive) {
 //var is function-scoped, let and const are block-scoped. var should be avoided in modern JS to prevent scope-related issues
 
 //Variable Naming Rules and Conventions
-//RULES
+//RULES - Cannot be broken
 //1. Starts with a letter, underscore or dollar sign, NO numbers
 //2. Should have no white spaces or hyphens
 //3. Is case sensitive
-//4. Contains letters, numbers, underscores and dollar signs
-//5. Cannot use the reserved keywords eg functions, let, const etc.
+//4. Contains letters, numbers, underscores and dollar signs after the first character
+//5. Cannot use the reserved keywords eg functions, let, const, while, return etc.
 
 //CONVENTIONS
 //1. Use camelCase for variables and functions
@@ -29,4 +29,6 @@ if(isActive) {
 //3. Use PascalCase for class names
 //4. Avoid single-letter names
 //5. Use const over let expect where the variable's value need to change
+//6. Be consistent with the naming styles
+//7. Avoid type-based names eg intCount, strName etc.
 
