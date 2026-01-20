@@ -18,8 +18,8 @@ console.log(convertDollartoKsh(50));
 console.log(convertDollartoKsh(100));
 console.log(convertDollartoKsh(90000000));   
 
-//Write a funcction that takes a number abd saays whether it's even or odd
-function checkEvenOdd(number){
+//Write a funcction that takes a number and says whether it's even or odd
+function checkEvenOrOdd(number){
     if(number % 2==0){
         return "Number is Even!";
     }
@@ -28,8 +28,28 @@ function checkEvenOdd(number){
     }
 }
 
-console.log(checkEvenOdd(23));
-console.log(checkEvenOdd(12));
-console.log(checkEvenOdd(2445781));
-console.log(checkEvenOdd(23456));
-console.log(checkEvenOdd(123437));
+console.log(checkEvenOrOdd(23));
+console.log(checkEvenOrOdd(12));
+console.log(checkEvenOrOdd(2445781));
+console.log(checkEvenOrOdd(23456));
+console.log(checkEvenOrOdd(123437));
+
+//Write a function that takes in age and returns whether a person is eligible to vote or not
+
+function eligibleToVote(age){
+    if(age<0 || age>120){
+        console.log("Invalid age input!");
+    }
+    else if(age>=18){
+        console.log("Eligible to vote!");
+    }
+    else{
+        console.log("Not Eligible to vote!"); 
+    }
+}
+
+eligibleToVote(20);
+eligibleToVote(15);
+eligibleToVote(119.999999);
+eligibleToVote(25);
+eligibleToVote(-7);
